@@ -296,6 +296,60 @@ Collaborating to realize our vision. </p>
                     </div>
                 </div>
             </div>
+			
+			<style>
+  /* Scroll to top button */
+  #scrollTopBtn {
+    display: none;              /* Hidden by default */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #9dbdff;
+    color: white;
+    cursor: pointer;
+    padding: 12px 21px;
+    border-radius: 50%;
+  }
+
+  #scrollTopBtn:hover {
+    background-color: #555;
+  }
+</style>
+		<a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<script>
+  // Show button when scrolling down
+  window.onscroll = function() {
+    toggleScrollButton();
+  };
+
+  function toggleScrollButton() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  }
+
+  // Scroll to top smoothly
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+			
             <div class="row">
                 <div class="col-md-12 text-center">
 
