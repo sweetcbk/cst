@@ -119,6 +119,37 @@
         .bg-soft-primary {
             background-color: rgba(59, 118, 225, .25) !important;
         }
+		
+		
+		.search-box {
+max-width: 420px;
+margin: 15px auto;
+}
+
+
+.search-box input {
+width: 100%;
+padding: 12px 18px;
+font-size: 15px;
+border-radius: 30px;
+border: 1px solid #3b76e1;
+outline: none;
+transition: all 0.3s ease;
+background: #fff;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.search-box input::placeholder {
+color: #777;
+}
+
+
+.search-box input:focus {
+border-color: #3b76e1;
+box-shadow: 0 6px 18px rgba(59,118,225,0.35);
+}
+		
     </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -185,7 +216,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <h5 class="card-title"><b style="color:blue">NOTICE BOARD </b><span class="text-muted fw-normal ms-2"></span></h5>
+                            <h5 class="card-title"><b style="color:#4d94ff">NOTICE BOARD </b><span class="text-muted fw-normal ms-2"></span></h5>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -194,8 +225,8 @@
                                 <ul class="nav nav-pills">
                                     <li class="nav-item">
                                         <a aria-current="page" href="#" class="router-link-active router-link-exact-active nav-link active" data-bs-toggle="tooltip" data-bs-placement="top" title data-bs-original-title="List" aria-label="List">
-<i class="bx bx-list-ul"></i>
-</a>
+                                        <i class="bx bx-list-ul"></i>
+                                        </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="top" title data-bs-original-title="Grid" aria-label="Grid"><i class="bx bx-grid-alt"></i></a>
@@ -212,6 +243,12 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class>
+						
+						    <div class="search-box">
+							<input type="text" id="searchInput" onkeyup="searchTable()" placeholder="🔍 Search notice, letter, syllabus, form...">
+							</div>
+						
+						
                             <div class="table-responsive">
 
                                 <table class="table project-list-table table-nowrap align-middle table-borderless">
@@ -852,6 +889,27 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript"></script>
+	
+	<script>
+function searchTable() {
+var input = document.getElementById("searchInput");
+var filter = input.value.toLowerCase();
+var table = document.querySelector(".project-list-table tbody");
+var tr = table.getElementsByTagName("tr");
+
+
+for (var i = 0; i < tr.length; i++) {
+var td = tr[i].getElementsByTagName("td")[0];
+if (td) {
+var textValue = td.textContent || td.innerText;
+tr[i].style.display = textValue.toLowerCase().includes(filter)
+? ""
+: "none";
+}
+}
+}
+</script>
+	
 </body>
 
 </html>
