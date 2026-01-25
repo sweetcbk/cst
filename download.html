@@ -26,6 +26,37 @@
     <link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
 	
+	<style type="text/css">
+	.search-box {
+max-width: 420px;
+margin: 15px auto;
+}
+
+
+.search-box input {
+width: 100%;
+padding: 12px 18px;
+font-size: 15px;
+border-radius: 30px;
+border: 1px solid #3b76e1;
+outline: none;
+transition: all 0.3s ease;
+background: #fff;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.search-box input::placeholder {
+color: #777;
+}
+
+
+.search-box input:focus {
+border-color: #3b76e1;
+box-shadow: 0 6px 18px rgba(59,118,225,0.35);
+}
+</style>	
+	
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7307819332831951"
      crossorigin="anonymous"></script>
 <script>
@@ -95,6 +126,11 @@
 			questions effectively.</p>
           </div>
         </div>	
+		
+		      <div class="search-box">
+							<input type="text" id="searchInput" onkeyup="searchTable()" placeholder="🔍 Search notice, letter, syllabus, form...">
+							</div>
+		
 				<div class="row">
 				
 			
@@ -502,7 +538,23 @@
 			</div>
 		</section>
 
+        
+		<script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+let filter = this.value.toLowerCase();
 
+
+// all cards
+let cards = document.querySelectorAll(".col-md-6.col-lg-3");
+
+
+cards.forEach(card => {
+let text = card.innerText.toLowerCase();
+card.style.display = text.includes(filter) ? "" : "none";
+});
+});
+</script> 
+		
 		
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
