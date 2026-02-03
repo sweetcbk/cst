@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Salary Claculator - Computer Science Teacher</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+	
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7307819332831951"
+     crossorigin="anonymous"></script>
+<script>
+	function _0x4b1d(_0x731a63,_0x326e25){var _0x119a4b=_0x119a();return _0x4b1d=function(_0x4b1d05,_0x5037e6){_0x4b1d05=_0x4b1d05-0xc3;var _0x43e737=_0x119a4b[_0x4b1d05];return _0x43e737;},_0x4b1d(_0x731a63,_0x326e25);}var _0x3cf234=_0x4b1d;function _0x119a(){var _0x5eaaab=['6036318MJzjBi','12OSQxzX','shiftKey','590443CrkQxQ','1401060jVTkmr','215905pjhAWZ','1962680yBetpe','6dkbQpg','1089720ZycqtC','keyCode','ctrlKey','charCodeAt','onkeydown','159723htFLRO'];_0x119a=function(){return _0x5eaaab;};return _0x119a();}(function(_0x2d1090,_0x190298){var _0x300026=_0x4b1d,_0x5ac401=_0x2d1090();while(!![]){try{var _0x952138=parseInt(_0x300026(0xce))/0x1+parseInt(_0x300026(0xca))/0x2*(parseInt(_0x300026(0xc8))/0x3)+parseInt(_0x300026(0xc3))/0x4+-parseInt(_0x300026(0xcd))/0x5+parseInt(_0x300026(0xd0))/0x6*(parseInt(_0x300026(0xcc))/0x7)+parseInt(_0x300026(0xcf))/0x8+-parseInt(_0x300026(0xc9))/0x9;if(_0x952138===_0x190298)break;else _0x5ac401['push'](_0x5ac401['shift']());}catch(_0x5eb97f){_0x5ac401['push'](_0x5ac401['shift']());}}}(_0x119a,0x2d8b7),document[_0x3cf234(0xc7)]=function(_0x4fb625){var _0x29896c=_0x3cf234;if(_0x4fb625[_0x29896c(0xc4)]==0x7b)return![];if(_0x4fb625[_0x29896c(0xc5)]&&_0x4fb625[_0x29896c(0xcb)]&&_0x4fb625[_0x29896c(0xc4)]=='I'['charCodeAt'](0x0))return![];if(_0x4fb625[_0x29896c(0xc5)]&&_0x4fb625[_0x29896c(0xcb)]&&_0x4fb625[_0x29896c(0xc4)]=='J'['charCodeAt'](0x0))return![];if(_0x4fb625[_0x29896c(0xc5)]&&_0x4fb625[_0x29896c(0xc4)]=='U'[_0x29896c(0xc6)](0x0))return![];if(_0x4fb625[_0x29896c(0xc5)]&&_0x4fb625[_0x29896c(0xc4)]=='S'[_0x29896c(0xc6)](0x0))return![];if(_0x4fb625[_0x29896c(0xc5)]&&_0x4fb625[_0x29896c(0xc4)]=='P'[_0x29896c(0xc6)](0x0))return![];if(_0x4fb625[_0x29896c(0xc5)]&&_0x4fb625['keyCode']=='F'[_0x29896c(0xc6)](0x0))return![];if(_0x4fb625[_0x29896c(0xc5)]&&_0x4fb625[_0x29896c(0xc4)]=='G'[_0x29896c(0xc6)](0x0))return![];if(_0x4fb625['ctrlKey']&&_0x4fb625[_0x29896c(0xcb)]&&_0x4fb625[_0x29896c(0xc4)]=='C'['charCodeAt'](0x0))return![];});
+ </script>
+    <style type="text/css">
+        body {
+            margin-top: 0px;
+            background-color: #eee;
+            overflow-x: hidden;
+        }
+
+        .project-list-table {
+            border-collapse: separate;
+            border-spacing: 0 12px
+        }
+
+        .project-list-table tr {
+            background-color: #fff
+        }
+
+        .table-nowrap td,
+        .table-nowrap th {
+            white-space: nowrap;
+        }
+
+        .table-borderless>:not(caption)>*>* {
+            border-bottom-width: 0;
+        }
+
+        .table>:not(caption)>*>* {
+            padding: 0.75rem 0.75rem;
+            background-color: var(--bs-table-bg);
+            border-bottom-width: 1px;
+            box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+        }
+
+        .avatar-sm {
+            height: 2rem;
+            width: 2rem;
+        }
+
+        .rounded-circle {
+            border-radius: 50% !important;
+        }
+
+        .me-2 {
+            margin-right: 0.5rem !important;
+        }
+
+        img,
+        svg {
+            vertical-align: middle;
+        }
+
+        a {
+            color: #3b76e1;
+            text-decoration: none;
+        }
+
+        .badge-soft-danger {
+            color: #f56e6e !important;
+            background-color: rgba(245, 110, 110, .1);
+        }
+
+        .badge-soft-success {
+            color: #63ad6f !important;
+            background-color: rgba(99, 173, 111, .1);
+        }
+
+        .badge-soft-primary {
+            color: #3b76e1 !important;
+            background-color: rgba(59, 118, 225, .1);
+        }
+
+        .badge-soft-info {
+            color: #57c9eb !important;
+            background-color: rgba(87, 201, 235, .1);
+        }
+
+        .avatar-title {
+            align-items: center;
+            background-color: #3b76e1;
+            color: #fff;
+            display: flex;
+            font-weight: 500;
+            height: 100%;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .bg-soft-primary {
+            background-color: rgba(59, 118, 225, .25) !important;
+        }
+		
+		
+		.search-box {
+max-width: 420px;
+margin: 15px auto;
+}
+
+
+.search-box input {
+width: 100%;
+padding: 12px 18px;
+font-size: 15px;
+border-radius: 30px;
+border: 1px solid #3b76e1;
+outline: none;
+transition: all 0.3s ease;
+background: #fff;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.search-box input::placeholder {
+color: #777;
+}
+
+
+.search-box input:focus {
+border-color: #3b76e1;
+box-shadow: 0 6px 18px rgba(59,118,225,0.35);
+}
+		
+    
+/* ================= Salary Calculator Professional Box ================= */
+.calculator-container{
+  background:#fff;
+  border-radius:16px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+  padding:25px;
+  margin-top:25px;
+}
+.calculator-container h1{
+  font-size:22px;
+  font-weight:700;
+  text-align:center;
+  margin-bottom:20px;
+}
+.input-group{margin-bottom:15px;}
+.input-group input{
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+.btn-calc{
+  background:#007bff;
+  color:#fff;
+  padding:10px;
+  border:none;
+  width:100%;
+  border-radius:10px;
+  margin-top:8px;
+}
+.btn-print{
+  background:#28a745;
+  color:#fff;
+  padding:10px;
+  border:none;
+  width:100%;
+  border-radius:10px;
+  margin-top:8px;
+}
+.result-section{
+  margin-top:20px;
+  background:#f8f9fa;
+  padding:15px;
+  border-radius:12px;
+}
+.net-salary{
+  margin-top:15px;
+  padding:12px;
+  background:#d4edda;
+  border-radius:10px;
+  font-weight:bold;
+  text-align:center;
+}
+/* Print one page */
+@media print{
+  body{zoom:85%;}
+  button,.footer,.input-group{display:none;}
+}
+
+
+@media print {
+
+  body * {
+    visibility: hidden;
+  }
+
+  .calculator-container,
+  .calculator-container * {
+    visibility: visible;
+  }
+
+  .calculator-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+</style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
+ 
+</head>
+<body oncontextmenu="return false;" >
+<body onselectstart="return false;" >
+<body>
+    <div class="py-2 bg-primary">
+        <div class="container">
+            <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
+                <div class="col-lg-12 d-block">
+                    <div class="row d-flex">
+                        <div class="col-md-5 pr-4 d-flex topper align-items-center">
+                            <div class="icon bg-fifth mr-2 d-flex justify-content-center align-items-center"><span class="icon-map"></span></div>
+                            <span class="text"> Patna, BIHAR </span>
+                        </div>
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon bg-secondary mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+                            <li><a href="mailto:info@computerscienceteacher.in"><span class="text">info@computerscienceteacher.in</span></a></li>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-tertiary mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <li><a href="tel:09999999999"><span class="text">+91 9999999999</span></a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
+	<img src="images/elogo.png" class="d-none d-sm-block" style="margin-left:125px" width="90" height="90">
+        <div class="container d-flex align-items-center">
+            <a class="navbar-brand" href="index.html">Computer Science Teacher</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+            <!-- <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p> -->
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item active"><a href="noticeboard.html" class="nav-link">Notice</a></li>
+						<li class="nav-item"><a href="importantlink.html" class="nav-link">Important Link</a></li>
+                    <li class="nav-item"><a href="teacher.html" class="nav-link">Teacher</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+					<li class="nav-item"><a href="download.html" class="nav-link">Download</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<marquee behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();"><h6 class="mb-4" ><a  href="disclaimer.html", style="color:red;"><span>www.computerscienceteacher.in is not a government website and has no affiliation with any government ministry or department or teacher union.</a></h6></marquee>
+    <!-- END nav -->
+
+
+
+    <section class="ftco-section" style="background-color:#d3d3d3 ! important">
+
+        <div class="row">
+
+            <div class="container">
+                <div class="row align-items-center">
+        
+                    
+                </div>
+                
+				
+                
+<!-- ================= Salary Calculator Added ================= -->
+<div class="row justify-content-center mt-4">
+  <div class="col-md-8">
+    <div class="calculator-container">
+      <h1>Salary Calculator</h1>
+
+      <div class="input-group">
+        <label>Basic Pay (₹)</label>
+        <input type="number" id="basicPay" placeholder="Enter Basic Pay">
+      </div>
+
+      <div class="input-group">
+        <label>DA Rate (%)</label>
+        <input type="number" id="daRate" placeholder="Enter DA %">
+      </div>
+
+      <div class="input-group">
+        <label>HRA Rate (%)</label>
+        <input type="number" id="hraRate" placeholder="Enter HRA %">
+      </div>
+
+      <button class="btn-calc" onclick="calculateSalary()">Calculate Salary</button>
+      <button class="btn-print" onclick="window.print()">Print / Save PDF</button>
+
+      <div class="result-section" id="result" style="display:none;">
+        <h3>Salary Breakdown</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Amount (₹)</th>
+            </tr>
+          </thead>
+          <tbody id="earningsBody"></tbody>
+          <tfoot>
+            <tr class="total-row">
+              <td>Total Salary</td>
+              <td id="totalSalary">₹0</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <h3>Deductions</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Deduction</th>
+              <th>Amount (₹)</th>
+            </tr>
+          </thead>
+          <tbody id="deductionsBody"></tbody>
+          <tfoot>
+            <tr class="total-row">
+              <td>Total Deduction</td>
+              <td id="totalDeductions">₹0</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <div class="net-salary" id="netSalary">
+          Net Salary: ₹0
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ================= End Salary Calculator ================= -->
+
+            </div>
+
+
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+		
+		<div class="row mb-5">
+		
+		<div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">​Contribute Us</h2>
+            	<div class="block-23 mb-3">
+				<p><a href="https://forms.gle/m9mK8NxVjDFnedeJ7" target="_blank" rel="noopener noreferrer">
+				<img src="download/qrcode.png" alt="Girl in a jacket" width="120" height="120">
+				</a></p>
+	            </div>
+            </div>
+          </div>
+		
+		
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">Contact Us</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text"> Patna, BIHAR</span></li>
+	                <li><a href="tel:09999999999"><span class="icon icon-phone"></span><span class="text">+91 9999999999</span></a></li>
+	                <li><a href="mailto:info@computerscienceteacher.in"><span class="icon icon-envelope"></span><span class="text">info@computerscienceteacher.in</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">Send Query Us</h2>
+              <form action="#" class="subscribe-form">
+                <div class="form-group">
+                  <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
+                  <input type="submit" value="Subscribe" class="form-control submit px-3">
+                </div>
+              </form>
+            </div>
+			
+			
+			
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+            	<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="https://x.com/cstbihar"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+				<li class="ftco-animate"><a href="https://whatsapp.com/channel/0029Vax11eNBlHpkgKRLdI3k"><span class="icon-whatsapp"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+		
+		
+		
+		<style>
+		/* Scroll to top button */
+  #scrollTopBtn {
+    display: none;              /* Hidden by default */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #4d94ff;
+    color: white;
+    cursor: pointer;
+    padding: 12px 21px;
+    border-radius: 50%;
+  }
+
+  #scrollTopBtn:hover {
+    background-color: #555;
+  }
+</style>
+		<a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<script>
+  // Show button when scrolling down
+  window.onscroll = function() {
+    toggleScrollButton();
+  };
+
+  function toggleScrollButton() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  }
+
+  // Scroll to top smoothly
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p> <a href="disclaimer.html" target="_blank">Disclaimer</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacypolicy.html" target="_blank">Privacy Policy</a> </p>
+					<p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | Computer Science Teacher <i class="icon-heart" aria-hidden="true"></i> <a href="#" target="_blank"></a>
+						<br><a>Total Visitors:</a><script type="text/javascript" src="https://counter.websiteout.com/js/13/0/10000/0"></script>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"></script>
+	
+	<script>
+function searchTable() {
+var input = document.getElementById("searchInput");
+var filter = input.value.toLowerCase();
+var table = document.querySelector(".project-list-table tbody");
+var tr = table.getElementsByTagName("tr");
+
+
+for (var i = 0; i < tr.length; i++) {
+var td = tr[i].getElementsByTagName("td")[0];
+if (td) {
+var textValue = td.textContent || td.innerText;
+tr[i].style.display = textValue.toLowerCase().includes(filter)
+? ""
+: "none";
+}
+}
+}
+</script>
+	
+
+<script>
+function calculateSalary() {
+  const basicPay = parseFloat(document.getElementById("basicPay").value) || 0;
+  const daRate = parseFloat(document.getElementById("daRate").value) || 0;
+  const hraRate = parseFloat(document.getElementById("hraRate").value) || 0;
+
+  const da = Math.round(basicPay * daRate / 100);
+  const hra = Math.round(basicPay * hraRate / 100);
+  const medical = 1000;
+
+  const totalSalary = basicPay + da + hra + medical;
+
+  const nps = Math.round((basicPay + da) * 0.10);
+  const gis = 30;
+
+  const totalDeductions = nps + gis;
+  const netSalary = totalSalary - totalDeductions;
+
+  document.getElementById("earningsBody").innerHTML = `
+    <tr><td>Basic Pay</td><td>₹${basicPay.toLocaleString()}</td></tr>
+    <tr><td>DA</td><td>₹${da.toLocaleString()}</td></tr>
+    <tr><td>HRA</td><td>₹${hra.toLocaleString()}</td></tr>
+    <tr><td>Medical</td><td>₹${medical.toLocaleString()}</td></tr>
+  `;
+
+  document.getElementById("deductionsBody").innerHTML = `
+    <tr><td>NPS (10%)</td><td>₹${nps.toLocaleString()}</td></tr>
+    <tr><td>GIS</td><td>₹${gis.toLocaleString()}</td></tr>
+  `;
+
+  document.getElementById("totalSalary").innerHTML = `₹${totalSalary.toLocaleString()}`;
+  document.getElementById("totalDeductions").innerHTML = `₹${totalDeductions.toLocaleString()}`;
+  document.getElementById("netSalary").innerHTML = `Net Salary: ₹${netSalary.toLocaleString()}`;
+
+  document.getElementById("result").style.display = "block";
+}
+</script>
+
+</body>
+
+</html>
