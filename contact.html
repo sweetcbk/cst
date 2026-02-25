@@ -131,7 +131,7 @@
 
     <section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
         <div class="container">
-            <div class="row d-flex align-items-stretch no-gutters">
+            <div class="row d-flex align-items-stretch">
                 <div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
                     <form action="#">
                         <div class="form-group">
@@ -150,42 +150,21 @@
                             <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
                         </div>
                     </form>
+					
                 </div>
                 <div class="col-md-6 d-flex align-items-stretch">
                     <div id="map">
-                        <div class="mapouter">
-                            <div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.683446052867!2d85.14186897606385!3d25.615433114632346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5859a43c53ff%3A0xd4332c94f35395b5!2sGandhi%20Maidan%20Rd%2C%20Raja%20Ji%20Salai%2C%20Indira%20Nagar%2C%20Patna%2C%20Bihar%20800001!5e0!3m2!1sen!2sin!4v1767426709574!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <style>
-                                    .mapouter {
-                                        display: table;
-                                    }
-
-                                    .gmap_canvas {
-                                        overflow: hidden;
-                                        position: relative;
-                                        height: 430px;
-                                        width: 570px;
-                                        background: #fff;
-                                    }
-                                </style><a href="https://www.taxuni.com/1040-ez-form/">1040 EZ Form</a>
-                                <style>
-                                    .gmap_canvas iframe {
-                                        position: relative !important;
-                                        z-index: 2 !important;
-                                    }
-
-                                    .gmap_canvas a {
-                                        color: #fff !important;
-                                        position: absolute !important;
-                                        top: 0 !important;
-                                        left: 0 !important;
-                                        z-index: 0 !important;
-                                    }
-                                </style>
-                            </div>
-                        </div>
-
-                    </div>
+  <div class="map-responsive">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.683446052867!2d85.14186897606385!3d25.615433114632346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5859a43c53ff%3A0xd4332c94f35395b5!2sGandhi%20Maidan%20Rd%2C%20Raja%20Ji%20Salai%2C%20Indira%20Nagar%2C%20Patna%2C%20Bihar%20800001!5e0!3m2!1sen!2sin!4v1767426709574!5m2!1sen!2sin"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
 
                 </div>
             </div>
@@ -203,6 +182,7 @@
             	<h2 class="ftco-heading-2">Useful Links</h2>
             	<div class="block-23 mb-3">
                  <a href="teacher-salary-calculator-bihar.html" target="_blank">Salary Calculator</a><br>
+				 <a href="image-tool.html" target="_blank">Resize Image</a><br>
 				 <a href="test.html" target="_blank">Computer Test</a>
 				
 				<!--
@@ -273,6 +253,25 @@
   #scrollTopBtn:hover {
     background-color: #555;
   }
+  
+  .map-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;   /* Height ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+  
 </style>
 		<a href="#top" class="go-top" data-go-top title="Go to Top">
     <ion-icon name="arrow-up"></ion-icon>
