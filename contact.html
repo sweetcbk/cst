@@ -97,6 +97,80 @@
             </div>
         </div>
     </section>
+	<style>
+.post-buttons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.post-btn{
+    text-decoration:none;
+    width:300px;
+}
+
+.post-box{
+    background:linear-gradient(135deg,#007bff,#00c6ff);
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    color:white;
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.post-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.3);
+}
+
+.post-box i{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.post-box h1{
+    font-size:26px;
+    margin:0;
+}
+</style>
+	
+	<!-- Font Awesome CDN (Icon ke liye) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="post-buttons">
+
+    <!-- Director -->
+    <a href="https://state.bihar.gov.in/educationbihar/Content.html?links&page=Directory" target="_blank" class="post-btn">
+        <div class="post-box">
+			<i class="fa-solid fa-building-columns"></i>
+			
+            <h1>Headquarter</h1>
+			<h6>Education Department</h6>
+        </div>
+    </a>
+
+    <!-- RDD -->
+    <a href="https://state.bihar.gov.in/educationbihar/Content.html?links&page=RDD" target="_blank" class="post-btn">
+        <div class="post-box">
+            <i class="fa-solid fa-user-tie"></i>
+            <h1>RDD</h1>
+			<h6>Education Department</h6>
+        </div>
+    </a>
+
+    <!-- DEO -->
+    <a href="https://state.bihar.gov.in/educationbihar/Content.html?links&page=DEO" target="_blank" class="post-btn">
+        <div class="post-box">
+            <i class="fa-solid fa-user-gear"></i>
+            <h1>DEO</h1>
+			<h6>Education Department</h6>
+        </div>
+    </a>
+
+</div>
 
     <section class="ftco-section contact-section">
         <div class="container">
