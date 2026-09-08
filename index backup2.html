@@ -195,35 +195,6 @@ gap:4px;
 }
 </style>
 
-
-<style>
-.cst-contributors-section{position:relative;padding:82px 0 88px;background:linear-gradient(180deg,#fff 0%,#f7fbff 100%);overflow:hidden}
-.cst-contributors-section:before,.cst-contributors-section:after{content:"";position:absolute;border-radius:50%;pointer-events:none}
-.cst-contributors-section:before{width:300px;height:300px;right:-150px;top:-120px;background:rgba(77,148,255,.08)}
-.cst-contributors-section:after{width:240px;height:240px;left:-120px;bottom:-110px;background:rgba(249,109,0,.07)}
-.cst-contributors-head{position:relative;z-index:1;max-width:760px;margin:0 auto 46px;text-align:center}
-.cst-contributors-kicker{display:inline-flex;padding:7px 15px;margin-bottom:13px;border-radius:30px;background:#eef6ff;color:#1687e8;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
-.cst-contributors-head h2{margin:0 0 13px;color:#172033;font-size:38px;line-height:1.2;font-weight:700}
-.cst-contributors-head h2 span{color:#f96d00}
-.cst-contributors-head p{margin:0;color:#788398;font-size:15px;line-height:1.8}
-.cst-contributors-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px;max-width:900px;margin:0 auto}
-.cst-contributor-card{position:relative;display:flex;align-items:center;gap:25px;min-height:215px;padding:27px;background:#fff;border:1px solid #e5edf6;border-radius:20px;box-shadow:0 9px 30px rgba(31,56,88,.07);overflow:hidden;transition:.3s}
-.cst-contributor-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#1687e8,#f96d00)}
-.cst-contributor-card:hover{transform:translateY(-7px);border-color:#d4e3f3;box-shadow:0 18px 42px rgba(31,56,88,.13)}
-.cst-contributor-photo{position:relative;flex:0 0 118px;width:118px;height:118px;padding:5px;border-radius:50%;background:linear-gradient(135deg,#1687e8,#f96d00)}
-.cst-contributor-photo-inner{width:100%;height:100%;border-radius:50%;background:#fff;padding:4px}
-.cst-photo{width:100%;height:100%;border-radius:50%;background-position:center;background-size:cover;background-repeat:no-repeat}
-.cst-featured-badge{position:absolute;left:50%;bottom:-11px;transform:translateX(-50%);white-space:nowrap;padding:5px 10px;border-radius:20px;background:#172033;color:#fff;font-size:10px;font-weight:700;box-shadow:0 4px 12px rgba(23,32,51,.2)}
-.cst-contributor-info{min-width:0;flex:1}
-.cst-contributor-info h3{margin:0 0 5px;color:#172033;font-size:23px;font-weight:700}
-.cst-contributor-degree{display:inline-block;margin-bottom:9px;color:#1687e8;font-size:13px;font-weight:700}
-.cst-contributor-role{display:block;margin-bottom:12px;color:#f96d00;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
-.cst-contributor-info p{margin:0;color:#7a8494;font-size:13px;line-height:1.65}
-.cst-contributor-line{width:42px;height:3px;margin-top:14px;border-radius:5px;background:linear-gradient(90deg,#1687e8,#f96d00)}
-@media(max-width:991px){.cst-contributors-grid{grid-template-columns:1fr;max-width:680px}}
-@media(max-width:575px){.cst-contributors-section{padding:60px 0 65px}.cst-contributors-head{padding:0 12px;margin-bottom:34px}.cst-contributors-head h2{font-size:29px}.cst-contributors-head p{font-size:14px}.cst-contributor-card{flex-direction:column;text-align:center;padding:30px 20px 25px;gap:20px}.cst-contributor-photo{flex-basis:112px;width:112px;height:112px}.cst-contributor-info h3{font-size:21px}.cst-contributor-line{margin-left:auto;margin-right:auto}}
-</style>
-
 </head>
   <body oncontextmenu="return false;" onselectstart="return false;">
 	  <div class="py-2 bg-primary">
@@ -477,43 +448,105 @@ Our goal is to make useful educational information and digital tools easily acce
 				</div>
 			</div>
 		</section>
-<section class="cst-contributors-section">
-  <div class="container">
-    <div class="cst-contributors-head ftco-animate">
-      <div class="cst-contributors-kicker">✦ Our Community Contributors</div>
-      <h2>Meet Our <span>Contributors</span></h2>
-      <p>Meet the educators who contribute their knowledge, ideas and valuable resources to the Computer Science Teacher community.</p>
-    </div>
-    <div class="cst-contributors-grid">
-      <div class="cst-contributor-card ftco-animate">
-        <div class="cst-contributor-photo">
-          <div class="cst-contributor-photo-inner"><div class="cst-photo" style="background-image:url(images/teachers/mr.jpeg);"></div></div>
-          <span class="cst-featured-badge">Featured Contributor</span>
-        </div>
-        <div class="cst-contributor-info">
-          <h3>Mr. Ronit</h3>
-          <span class="cst-contributor-degree">MCA</span>
-          <span class="cst-contributor-role">Educational Contributor</span>
-          <p>Sharing useful knowledge and resources to support digital learning and the Computer Science Teacher community.</p>
-          <div class="cst-contributor-line"></div>
-        </div>
-      </div>
-      <div class="cst-contributor-card ftco-animate">
-        <div class="cst-contributor-photo">
-          <div class="cst-contributor-photo-inner"><div class="cst-photo" style="background-image:url(images/teachers/shs.jpeg);"></div></div>
-          <span class="cst-featured-badge">Featured Contributor</span>
-        </div>
-        <div class="cst-contributor-info">
-          <h3>Sagar Saurabh</h3>
-          <span class="cst-contributor-degree">B.Tech</span>
-          <span class="cst-contributor-role">Educational Contributor</span>
-          <p>Contributing useful ideas and educational resources for teachers, students and digital education.</p>
-          <div class="cst-contributor-line"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="ftco-section ftco-no-pb">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mb-4"><span>Top Contributor</span> Teachers</h2>
+            <p>Strong Subject Knowledge: They have a deep understanding of the subjects they teach, which allows them to explain concepts clearly and answer students’
+			questions effectively.</p>
+          </div>
+        </div>	
+				<div class="row">
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/teachers/mr.jpeg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Mr. Ronit</h3>
+								<h5>MCA</h5>
+								<span class="position mb-2">Contributor</span>
+								<div class="faded">
+									<p></p>
+									<ul class="ftco-social text-center">
+		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/teachers/shs.jpeg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Sagar Saurabh</h3>
+								<h5>B.Tech</h5>
+								<span class="position mb-2">Contributor</span>
+								<div class="faded">
+									<p></p>
+									<ul class="ftco-social text-center">
+		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/t1.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Teacher 3</h3>
+								<span class="position mb-2">Computer Science (11-12)</span>
+								<div class="faded">
+									<p></p>
+									<ul class="ftco-social text-center">
+		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/t2.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Teacher 4</h3>
+								<span class="position mb-2">Computer Science (11-12)</span>
+								<div class="faded">
+									<p></p>
+									<ul class="ftco-social text-center">
+		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+			</div>
+		</section>
 
 
         <section class="cst-resource-section">
